@@ -168,12 +168,13 @@ a {
 
 .section-services__card{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 210px;
 }
 .section-services__card-item{
     max-width: 340px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 .section-services__card-img {
     width: 100px;
@@ -298,7 +299,6 @@ a {
 .site-footer__links{
     margin-top: 64px;
     display: flex;
-    align-items: top;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -331,11 +331,38 @@ a {
 
 
 /* RESPONSIVE MODE */
+/* Section Services */
+@media only screen and (max-width: 1000px) {
+    .section-services__card {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    .section-services__card {
+        display: flex;
+        flex-direction: column;
+        align-content: start;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .section-services__title {
+        font-size: 55px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .section-services__title {
+        font-size: 45px;
+    }
+}
+/* //Section Services */
+
+
 
 /* section cta responsive mode */
-
 @media only screen and (max-width: 1000px) {
-
     .section-cta__img {
         position: absolute;
         left: 50%;
