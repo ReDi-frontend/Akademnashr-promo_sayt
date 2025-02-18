@@ -112,6 +112,7 @@ a {
 /* SITE MAIN */
 .main-content {
     height: 100%;
+
 }
 /* SECTION PYTHON */
 .section-python{
@@ -120,6 +121,7 @@ a {
 }
 .section-python__container {
     position: relative;
+    height: 488px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,11 +144,13 @@ a {
 }
 .section-python__img {
     position: relative;
-    right: 0;
+    right: 24px;
     top: 40px;
+    margin-left: 20px;
     margin-top: 40px;
     box-shadow: 24px 24px  rgba(255, 117, 0, 0.6);
     border-radius: 8px;
+
 }
 /* //SECTION PYTHON */
 
@@ -331,6 +335,60 @@ a {
 
 
 /* RESPONSIVE MODE */
+/* Section python-book */
+@media only screen and (max-width: 920px) {
+    .section-python__container {
+        display: flex;
+        align-items: top;
+    }
+
+    .section-python__information {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .section-python__img {
+        margin-top: 0;
+        width: 360px;
+        height: 360px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .section-python__container {
+        display: flex;
+        flex-direction: column;
+        height: 850px;
+        align-items: start;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .section-python__container {
+        height: 750px;
+    }
+
+    .section-python__information {
+        margin-bottom: 0;
+    }
+
+    .section-python__img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 305px) {
+    .section-python__img {
+        width: 240px;
+        height: 240px;
+    }
+}
+/* //Section python-book */
+
+
+
 /* Section Services */
 @media only screen and (max-width: 1000px) {
     .section-services__card {
